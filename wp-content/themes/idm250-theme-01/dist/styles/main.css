@@ -3,9 +3,16 @@
 }
 
 :root {
+  --backgroundColor: #070506;
+  --yellowAccentColor: #f9e2ad;
+  --contentBackground: #f8f3ef;
+  --footerHeaderText: #1f1f1f;
+  --footerPgText: #373737;
+  --accentRed: #d86e57;
 }
 
 body {
+  background-color: var(--backgroundColor);
 }
 
 h1 {
@@ -26,4 +33,55 @@ p {
 
 a {
   font-family: "Montserrat", sans-serif;
+}
+
+.backgroundColor {
+  background-color: var(--backgroundColor);
+}
+.contentBgColor {
+  background-color: var(--contentBackground);
+}
+
+.yellow {
+  color: var(--yellowAccentColor);
+}
+
+.red {
+  color: var(--accentRed);
+}
+
+.yellowBorder {
+  border: 0.5px solid var(--yellowAccentColor);
+}
+
+.nav-items {
+  font-size: 16px !important;
+}
+
+.brand {
+  font-size: 20px !important;
+}
+
+.navBorder {
+  border-bottom: 0.25px solid #fff !important;
+}
+footer > h2 {
+  color: var(--footerPgText);
+}
+
+footer > div > div > h4 {
+  color: var(--accentRed);
+}
+
+footer > div > div > p {
+  color: var(--footerPgText);
+}
+
+.footerBorder {
+  background-color: var(--footerPgText);
+  height: 0.25px;
+}
+
+div.content-blocks > p {
+  color: #fff;
 }

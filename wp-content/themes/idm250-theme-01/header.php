@@ -14,12 +14,12 @@
     <?php
 $menu = get_theme_menu('primary-menu');
   if ($menu) {?>
-  <nav class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+  <nav class="backgroundColor navBorder">
+  <div class="mx-auto max-w-10xl px-2 sm:px-4 lg:px-10">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button type="button" id="hamburgerMenu" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" id="hamburgerMenu" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!--
             Icon when menu is closed.
@@ -39,25 +39,25 @@ $menu = get_theme_menu('primary-menu');
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-          <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+      <div class="flex flex-shrink-0 w-full sm:w-auto items-center justify-center sm:justify-start">
+          <h1 class="text-slate-50 brand text-testColor mr-2">掲載こと</h1>
         </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch">
+      
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <?php
     foreach ($menu as $menu_item) {
-        echo "<a  class='bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
+        echo "<a  class=' nav-items text-white px-3 py-2 text-sm font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
         } ?>
             
           </div>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-          View notifications
+        <button type="button" class="rounded-sm px-2 py-1 yellow font-light yellowBorder hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+          Reservations
         </button>
 
         <!-- Profile dropdown -->
@@ -96,7 +96,7 @@ $menu = get_theme_menu('primary-menu');
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <?php
     foreach ($menu as $menu_item) {
-        echo "<a  class='bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
+        echo "<a  class='text-white block px-3 py-2 text-base font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
     } ?>
     </div>
   </div>

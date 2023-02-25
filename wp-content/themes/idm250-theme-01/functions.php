@@ -21,9 +21,9 @@ function theme_scripts_and_styles()
     );
     
 
-    wp_enqueue_style(
-        'bootstrap_css', 
-        '//stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css');
+    // wp_enqueue_style(
+    //     'bootstrap_css', 
+    //     '//stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css');
 
     // Load in Google Fonts
     wp_enqueue_style(
