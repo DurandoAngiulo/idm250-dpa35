@@ -26,6 +26,7 @@
 
   /* SPACING AND WIDTH */
   --wpImageWidth: 100%;
+  --contentPadding: 1rem;
 }
 
 body {
@@ -160,7 +161,7 @@ em {
 
 /* CONTENT BLOCKS GLOBAL */
 .content-blocks {
-  padding: 1rem;
+  padding: var(--contentPadding);
 }
 
 blockquote > p {
@@ -221,11 +222,13 @@ footer > div > div > p {
 
     /* SPACING AND WIDTH */
     --wpImageWidth: 80%;
+    --contentPadding: 5rem;
   }
 }
 
 @media screen and (min-width: 1080px) {
   :root {
     --wpImageWidth: 60%;
+    --contentPadding: 8rem;
   }
 }
