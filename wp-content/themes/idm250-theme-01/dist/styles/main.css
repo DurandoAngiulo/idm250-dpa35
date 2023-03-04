@@ -222,13 +222,13 @@ footer > div > div > p {
 
     /* SPACING AND WIDTH */
     --wpImageWidth: 80%;
-    --contentPadding: 5rem;
+    --contentPadding: 1rem 5rem;
   }
 }
 
 @media screen and (min-width: 1080px) {
   :root {
     --wpImageWidth: 60%;
-    --contentPadding: 8rem;
+    --contentPadding: 2rem 20%;
   }
 }
