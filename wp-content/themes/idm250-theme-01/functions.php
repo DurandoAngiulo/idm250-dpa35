@@ -39,17 +39,12 @@ function theme_scripts_and_styles()
         get_template_directory_uri() . '/dist/styles/main.css', // http://localhost:250/wp-content/themes/idm250-theme-02/dist/styles/main.css
         [], // dependencies
         filemtime(get_template_directory() . '/dist/styles/main.css'), // version number
-        'all' // media
+        'all', // media
+        
     );
 
     // Load in local JS {@link https://developer.wordpress.org/reference/functions/wp_enqueue_script/}
-    wp_enqueue_script(
-        'tailwind', // name of the script
-        'https://cdn.tailwindcss.com',
-        [], // dependencies
-        null, // version number
-        false // load in footer
-    );
+    
     wp_enqueue_script(
         'idm250-scripts', // name of the script
         get_template_directory_uri() . '/dist/scripts/main.js', // http://localhost:250/wp-content/themes/idm250-theme-02/dist/scripts/main.js
@@ -58,11 +53,27 @@ function theme_scripts_and_styles()
         true // load in footer
     );
 }
-add_action('wp_enqueue_scripts', 'theme_scripts_and_styles');
+
+
+// function tailwind_styles(){
+//     wp_enqueue_script(
+//         'tailwind', // name of the script
+//         'https://cdn.tailwindcss.com',
+//         [], // dependencies
+//         null, // version number
+//         false // load in footer
+//     );
+// }
+
+// add_action('wp_enqueue_scripts', 'tailwind_styles', 1);
+add_action('wp_enqueue_scripts', 'theme_scripts_and_styles', 100);
+
 
 add_theme_support('post-thumbnails');
 
 add_post_type_support('page', 'excerpt');
+
+
 
 function register_theme_menus(){
 

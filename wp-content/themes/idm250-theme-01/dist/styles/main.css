@@ -3,43 +3,147 @@
 }
 
 :root {
+  /* COLORS */
   --backgroundColor: #070506;
   --yellowAccentColor: #f9e2ad;
-  --contentBackground: #f8f3ef;
-  --footerHeaderText: #1f1f1f;
-  --footerPgText: #373737;
-  --accentRed: #d86e57;
+  --contentBackgroundColor: #f8f3ef;
+  --headerTextColor: #2c2c2c;
+  --pgTextColor: #373737;
+  --liTextColor: #3f3f3f;
+  --accentRedColor: #d86857;
+
+  /* FONT SIZES */
+  --h1Text: 30px;
+  --h2Text: 24px;
+  --h3Text: 20px;
+  --h4Text: 18px;
+  --h5Text: 16px;
+  --h6Text: 14px;
+  --pText: 16px;
+  --liText: 14px;
+  --blockquoteText: 20px;
+  --citeText: 12px;
+
+  /* SPACING AND WIDTH */
+  --wpImageWidth: 100%;
 }
 
 body {
-  background-color: var(--backgroundColor);
+  background-color: var(--contentBackgroundColor);
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: var(--h1Text);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: var(--h2Text);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
+  font-size: var(--h3Text);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--h4Text);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--h5Text);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
+}
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--h6Text);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--headerTextColor);
 }
 
 p {
   font-family: "Montserrat", sans-serif;
+  font-size: var(--pText);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--pgTextColor);
+  line-height: 1.1;
 }
 
 a {
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: var(--accentRedColor);
+  font-size: var(--pText);
+  margin-bottom: 1rem;
 }
 
+ul {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: circle;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+ol {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: upper-roman;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: var(--liTextColor);
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--liText);
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  color: var(--liTextColor);
+}
+
+cite {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--citeText);
+  color: var(--liTextColor);
+}
+figcaption {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--citeText);
+  color: var(--liTextColor);
+  text-align: center;
+  width: var(--wpImageWidth);
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* COLOR CLASSES */
 .backgroundColor {
   background-color: var(--backgroundColor);
 }
 .contentBgColor {
-  background-color: var(--contentBackground);
+  background-color: var(--contentBackgroundColor);
 }
 
 .yellow {
@@ -47,41 +151,81 @@ a {
 }
 
 .red {
-  color: var(--accentRed);
+  color: var(--accentRedColor);
 }
 
 .yellowBorder {
   border: 0.5px solid var(--yellowAccentColor);
 }
 
+/* CONTENT BLOCKS GLOBAL */
+.content-blocks {
+  padding: 1rem;
+}
+
+blockquote > p {
+  color: var(--liTextColor) !important;
+  font-size: var(--blockquoteText);
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.wp-block-pullquote {
+  padding-bottom: 3rem;
+}
+
+.wp-block-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wp-image-42 {
+  width: var(--wpImageWidth);
+}
+/* NAV BAR */
 .nav-items {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .brand {
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 .navBorder {
-  border-bottom: 0.25px solid #fff !important;
+  border-bottom: 0.25px solid #fff;
 }
+
+/* FOOTER */
 footer > h2 {
-  color: var(--footerPgText);
+  color: var(--pgTextColor);
 }
 
 footer > div > div > h4 {
-  color: var(--accentRed);
+  color: var(--accentRedColor);
 }
 
 footer > div > div > p {
-  color: var(--footerPgText);
+  color: var(--pgTextColor);
 }
 
 .footerBorder {
-  background-color: var(--footerPgText);
+  background-color: var(--pgTextColor);
   height: 0.25px;
 }
 
-div.content-blocks > p {
-  color: #fff;
+@media screen and (min-width: 768px) {
+  :root {
+    --citeText: 14px;
+
+    /* SPACING AND WIDTH */
+    --wpImageWidth: 80%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  :root {
+    --wpImageWidth: 60%;
+  }
 }

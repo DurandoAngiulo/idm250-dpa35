@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      },
+    corePlugins: {
+    preflight: false,
+  }
+    }
+  </script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -19,7 +34,7 @@ $menu = get_theme_menu('primary-menu');
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button type="button" id="hamburgerMenu" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" id="hamburgerMenu" class="bg-transparent border-transparent inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!--
             Icon when menu is closed.
@@ -40,7 +55,7 @@ $menu = get_theme_menu('primary-menu');
         </button>
       </div>
       <div class="flex flex-shrink-0 w-full sm:w-auto items-center justify-center sm:justify-start">
-          <h1 class="text-slate-50 brand text-testColor mr-2">掲載こと</h1>
+          <h1 class="text-slate-50 brand text-testColor mr-2 mb-0">掲載こと</h1>
         </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch">
       
@@ -49,14 +64,14 @@ $menu = get_theme_menu('primary-menu');
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <?php
     foreach ($menu as $menu_item) {
-        echo "<a  class=' nav-items text-white px-3 py-2 text-sm font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
+        echo "<a  class=' nav-items text-white px-3 py-2 font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
         } ?>
             
           </div>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" class="rounded-sm px-2 py-1 yellow font-light yellowBorder hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+        <button type="button" class="bg-transparent ounded-sm px-2 py-1 yellow font-light yellowBorder hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           Reservations
         </button>
 
