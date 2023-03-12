@@ -64,14 +64,14 @@ $menu = get_theme_menu('primary-menu');
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <?php
     foreach ($menu as $menu_item) {
-        echo "<a  class=' nav-items text-white px-3 py-2 font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
+        echo "<a  class=' nav-items text-white px-3 py-2 mb-0 font-light' aria-current='page' href='{$menu_item->url}'>{$menu_item->title}</a>";
         } ?>
             
           </div>
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" class="bg-transparent ounded-sm px-2 py-1 yellow font-light yellowBorder hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+        <button type="button" class="bg-transparent rounded-sm px-2 py-1 yellow font-light yellowBorder hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
           Reservations
         </button>
 

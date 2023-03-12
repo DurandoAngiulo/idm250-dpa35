@@ -7,7 +7,7 @@
   --backgroundColor: #070506;
   --yellowAccentColor: #f9e2ad;
   --contentBackgroundColor: #f8f3ef;
-  --headerTextColor: #2c2c2c;
+  --headerTextColor: #515151;
   --pgTextColor: #373737;
   --liTextColor: #3f3f3f;
   --accentRedColor: #d86857;
@@ -159,6 +159,10 @@ em {
   border: 0.5px solid var(--yellowAccentColor);
 }
 
+.redBorder {
+  border: 1px solid var(--accentRedColor);
+}
+
 /* CONTENT BLOCKS GLOBAL */
 .content-blocks {
   padding: var(--contentPadding);
@@ -198,10 +202,18 @@ blockquote > p {
   border-bottom: 0.25px solid #fff;
 }
 
-/* FOOTER */
-footer > h2 {
-  color: var(--pgTextColor);
+/* //////////////pages.php styles */
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 5, 6, 1) 0%,
+    rgba(7, 5, 6, 0) 100%
+  );
 }
+
+/* //////////////pages.php styles */
+
+/* FOOTER */
 
 footer > div > div > h4 {
   color: var(--accentRedColor);
@@ -216,6 +228,9 @@ footer > div > div > p {
   height: 0.25px;
 }
 
+.socialMedia {
+  fill: var(--headerTextColor);
+}
 @media screen and (min-width: 768px) {
   :root {
     --citeText: 14px;
