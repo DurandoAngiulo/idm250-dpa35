@@ -11,4 +11,15 @@ hamburgerMenu.addEventListener("click", () => {
   }
 });
 
-// When we close it do the opposite
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        clifford: "#da373d",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};

@@ -55,17 +55,17 @@ function theme_scripts_and_styles()
 }
 
 
-// function tailwind_styles(){
-//     wp_enqueue_script(
-//         'tailwind', // name of the script
-//         'https://cdn.tailwindcss.com',
-//         [], // dependencies
-//         null, // version number
-//         false // load in footer
-//     );
-// }
+function tailwind_styles(){
+    wp_enqueue_script(
+        'tailwind', // name of the script
+        'https://cdn.tailwindcss.com',
+        [], // dependencies
+        null, // version number
+        false // load in footer
+    );
+}
 
-// add_action('wp_enqueue_scripts', 'tailwind_styles', 1);
+add_action('wp_enqueue_scripts', 'tailwind_styles', 1);
 add_action('wp_enqueue_scripts', 'theme_scripts_and_styles', 100);
 
 

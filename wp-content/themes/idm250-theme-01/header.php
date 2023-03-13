@@ -5,21 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      },
-    corePlugins: {
-    preflight: false,
-  }
-    }
-  </script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
