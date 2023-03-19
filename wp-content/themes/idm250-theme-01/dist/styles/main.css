@@ -27,6 +27,8 @@
   /* SPACING AND WIDTH */
   --wpImageWidth: 100%;
   --contentPadding: 1rem;
+  --redBarPageSpacing: 80%;
+  --redBarHeight: 330px;
 }
 
 body {
@@ -201,7 +203,37 @@ blockquote > p {
 .navBorder {
   border-bottom: 0.25px solid #fff;
 }
+/* ////////////////////////////////HOME STYLES */
+.titlebox {
+  height: 290px;
+  width: 120px;
+}
 
+.home-red-bar {
+  background-color: var(--accentRedColor);
+  height: 40px;
+  width: 96%;
+}
+
+.home-black-box {
+  display: none;
+  position: absolute;
+  z-index: -5;
+  width: 260px;
+  height: 300px;
+  bottom: -22rem;
+  left: 70%;
+}
+
+.home-black-box-2 {
+  display: none;
+  position: absolute;
+  z-index: -5;
+  width: 260px;
+  height: 300px;
+  bottom: -56rem;
+  left: 70%;
+}
 /* //////////////pages.php styles */
 .gradient {
   background: linear-gradient(
@@ -211,7 +243,28 @@ blockquote > p {
   );
 }
 
-/* //////////////pages.php styles */
+.red-bar {
+  display: none;
+  position: absolute;
+  width: 90px;
+  height: var(--redBarHeight);
+  opacity: 0.4;
+  background-color: var(--accentRedColor);
+  z-index: 5;
+  top: 35rem;
+  left: var(--redBarPageSpacing);
+}
+
+.footer-hero-box {
+  display: none;
+  position: absolute;
+  z-index: -5;
+  width: 360px;
+  height: 400px;
+  bottom: -45rem;
+  left: 70%;
+}
+/* //////////////pages.php styles
 
 /* FOOTER */
 
@@ -238,6 +291,31 @@ footer > div > div > p {
     /* SPACING AND WIDTH */
     --wpImageWidth: 80%;
     --contentPadding: 1rem 5rem;
+    --redBarPageSpacing: 85%;
+    --redBarHeight: 360px;
+  }
+  .red-bar {
+    display: block;
+  }
+
+  .home-black-box {
+    display: block;
+  }
+  .home-black-box-2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 916px) {
+  :root {
+  }
+  .home-black-box {
+    bottom: -23rem;
+    left: 75%;
+  }
+  .home-black-box-2 {
+    bottom: -57rem;
+    left: 75%;
   }
 }
 
@@ -245,5 +323,28 @@ footer > div > div > p {
   :root {
     --wpImageWidth: 60%;
     --contentPadding: 2rem 20%;
+    --redBarPageSpacing: 85%;
+    --redBarHeight: 430px;
+  }
+  .footer-hero-box {
+    display: block;
+  }
+  .home-black-box {
+    width: 360px;
+    height: 400px;
+    bottom: -27rem;
+    left: 70%;
+  }
+  .home-black-box-2 {
+    width: 360px;
+    height: 400px;
+    bottom: -66rem;
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --redBarPageSpacing: 77%;
   }
 }

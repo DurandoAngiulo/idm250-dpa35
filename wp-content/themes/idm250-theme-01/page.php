@@ -17,11 +17,12 @@
           <?php the_field('text_next_to_image'); ?>
           </h3>
         </div>
-        <div class="starter-image-container flex justify-center w-full sm:w-2/5 ">
+        <div class="red-bar rounded-sm"></div>
+        <div class="starter-image-container flex justify-center w-full  sm:w-2/5 ">
           <?php 
           $image = get_field('image_next_to_text');
           if( !empty( $image ) ): ?>
-          <img  class='starter-image w-full rounded drop-shadow-md' src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+          <img  class='starter-image w-full sm:h-4/5 md:h-auto rounded drop-shadow-md' src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
           <?php endif; ?>
         </div>
       </div>
@@ -40,6 +41,7 @@
   </div>
 </div>
 <div class="bottom-hero-image flex justify-center">
+  <div class="footer-hero-box border-solid border-black border-8"></div>
   <?php 
     $image = get_field('footer_hero_image');
     if( !empty( $image ) ): ?>
