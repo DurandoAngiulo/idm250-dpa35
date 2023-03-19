@@ -347,4 +347,12 @@ footer > div > div > p {
   :root {
     --redBarPageSpacing: 77%;
   }
+  .home-black-box {
+    bottom: -24rem;
+    left: 70%;
+  }
+  .home-black-box-2 {
+    bottom: -62rem;
+    left: 70%;
+  }
 }
