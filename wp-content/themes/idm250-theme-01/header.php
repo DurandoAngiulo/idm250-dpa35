@@ -39,9 +39,9 @@ $menu = get_theme_menu('primary-menu');
           </svg>
         </button>
       </div>
-      <div class="flex flex-shrink-0 w-full sm:w-auto items-center justify-center sm:justify-start">
+      <a href="/" class="flex flex-shrink-0 w-full sm:w-auto items-center mt-4 justify-center sm:justify-start">
           <h1 class="text-slate-50 brand text-testColor mr-2 mb-0">掲載こと</h1>
-        </div>
+        </a>
       <div class="flex flex-1 items-center justify-center sm:items-stretch">
       
         <div class="hidden sm:ml-6 sm:block">
