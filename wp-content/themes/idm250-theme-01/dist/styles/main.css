@@ -264,7 +264,17 @@ blockquote > p {
   bottom: -45rem;
   left: 70%;
 }
-/* //////////////pages.php styles
+
+/* ///////////// pages.php  */
+.wp-block-media-text {
+  margin-bottom: 5rem;
+}
+
+.content-blocks {
+  padding-bottom: 0;
+}
+
+/* //////////////about page template.php styles
 
 /* FOOTER */
 

@@ -1,4 +1,4 @@
-<footer class="pt-5 contentBgColor">
+<footer class="pt-5 mt-10 contentBgColor">
   <h2 class="font-semibold text-center text-3xl ">Connect With Us</h2>
   <div class="flex justify-center my-5">
     <div class="footerBorder w-5/6"></div>
