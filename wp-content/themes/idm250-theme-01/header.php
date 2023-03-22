@@ -39,7 +39,7 @@ $menu = get_theme_menu('primary-menu');
           </svg>
         </button>
       </div>
-      <a href="/" class="flex flex-shrink-0 w-full sm:w-auto items-center mt-4 justify-center sm:justify-start">
+      <a href="https://durandoangiulo.com/idm250/" class="flex flex-shrink-0 w-full sm:w-auto items-center mt-4 justify-center sm:justify-start">
           <h1 class="text-slate-50 brand text-testColor mr-2 mb-0">掲載こと</h1>
         </a>
       <div class="flex flex-1 items-center justify-center sm:items-stretch">
