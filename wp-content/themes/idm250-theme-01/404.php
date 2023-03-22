@@ -10,7 +10,7 @@
     </div>
     <div class="mx-auto mt-5 flow-root max-w-lg sm:mt-7">
       <div class="flex justify-center">
-        <a href="/index.php" class="text-sm font-semibold">
+        <a href="/" class="text-sm font-semibold">
           <span aria-hidden="true">&larr;</span>
           Return to Home
         </a>

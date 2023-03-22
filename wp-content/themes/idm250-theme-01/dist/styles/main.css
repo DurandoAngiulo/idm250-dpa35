@@ -261,7 +261,7 @@ blockquote > p {
   z-index: -5;
   width: 360px;
   height: 400px;
-  bottom: -45rem;
+  bottom: -50rem;
   left: 70%;
 }
 
@@ -317,8 +317,6 @@ footer > div > div > p {
 }
 
 @media screen and (min-width: 916px) {
-  :root {
-  }
   .home-black-box {
     bottom: -23rem;
     left: 75%;

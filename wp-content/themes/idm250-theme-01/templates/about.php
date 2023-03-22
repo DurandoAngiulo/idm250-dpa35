@@ -30,11 +30,11 @@
       </div>
       <div class="text-section-container mb-10 w-full ">
         <h3 class="text-center"><?php the_field('section_header'); ?></h3>
-        <p class="text-center">
+        <p class="text-center leading-7">
         <?php the_field('section_content'); ?>
         </p>
         <div class="button-container flex justify-center mt-8">
-          <button type="button" class="bg-transparent rounded-sm px-6 py-1 red font-normal text-lg redBorder hover:border-red-900 hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+          <button type="button" class="bg-transparent rounded-sm px-6 py-1 mb-5 red font-normal text-lg redBorder hover:border-red-900 hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
             Contact Us
           </button>
         </div>
